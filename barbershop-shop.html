@@ -3,93 +3,128 @@
 <head>
 	<title>SHOP</title>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
-    	<div class="main-menu">
+    <div class="header-container">
+    	<div class="header-blocks">
+        <div class="main-menu">
     		<img class="logo-main" src="" width="">
     		<nav class="main-menu">
     			<ul class="main-menu">
-    				<li><a href="">ИНФОРМАЦИЯ</a></li>
-    				<li><a href="">НОВОСТИ</a></li>
-    				<li><a href="">ПРАЙС-ЛИСТ</a></li>
-    				<li><a href="">МАГАЗИН</a></li>
-    				<li><a href="">КОНТАКТЫ</a></li>
+    				<li><a href="">Информация</a></li>
+    				<li><a href="">Новости</a></li>
+    				<li><a href="">Прайс-лист</a></li>
+    				<li><a href="">Магазин</a></li>
+    				<li><a href="">Контакты</a></li>
     			</ul>
     		</nav>
+            </div>
     		<div class="user-login">
     			<img class="icon-login" src="" width="">
     			<a href="">ВХОД</a>
     		</div>
+        </div>
     	</div>
+    </div>
     </header>
-    <div class="body-container">
+    <main>
+    <div class="main-container"> <!-- Здесь один контейнер или фон+контейнер для блоков? Или фон изначально один для всей страницы, а мы кладем на него футер, мэйн и хедер? -->
         <div class="breadcrumb">
-        	<h2>СРЕДСТВА ДЛЯ УХОДА</h2>
-        	<ul class="breadcrumb-nav">
-        		<li><a href="">ГЛАВНАЯ</a></li>
-        		<li><a href="">МАГАЗИН</a></li>
-        		<li><a href="">СРЕДСТВА ДЛЯ УХОДА</a></li>
+        	<h1>Средства для ухода</h1>
+        	<ul class="breadcrumb">
+        		<li><a href="">Главная</a></li>
+        		<li><a href="">Магазин</a></li>
+        		<li><a href="">Средства для ухода</a></li>
         	</ul>
         </div>
-        <div class="left-column">
-          <div class="producers">
-            <h3>ПРОИЗВОДИТЕЛИ:</h3>
-            <ul class="producers-list">
-            	<li><input type="checkbox" checked name="producers">BAXTER OF CALIFORNIA</li>
-            	<li><input type="checkbox" name="producers">MR NATTY</li>
-            	<li><input type="checkbox" checked name="producers">SUAVECITO</li>
-            	<li><input type="checkbox" name="producers">MALIN+GOETZ</li>
-            	<li><input type="checkbox" name="producers">MURRAY'S</li>
-            	<li><input type="checkbox" checked name="producers">AMERICAN CREW</li>
-            </ul>
-            </div>
-            <div class="groups-goods">
-            	<h3>ГРУППЫ ТОВАРОВ:</h3>
-            	<ul class="groups-goods">
-            		<li><input type="radio" name="groups-goods">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</li>
-            		<li><input type="radio" name="groups-goods" checked>СРЕДСТВА ДЛЯ УХОДА</li>
-            		<li><input type="radio" name="groups-goods">АКСЕССУАРЫ</li>
-            	</ul>
-            </div>
-        	<input type="submit" name="ПОКАЗАТЬ">
-        </div>
-        <div class="goods">
-        	<div class="goods-container">
-        		<div class="item-ground">
-        			<img src="" width="">
-        			<div class="item-pic">
+       <!-- так в вебинаре скзаали сделать этот блок -->
+        <form method="get">
+            <fieldset>
+                <legend>Производители</legend>
+                <ul>
+                    <li><input type="checkbox" id="check1" checked=""><label for="check1">Baxter of California</label></li>
+                    <li><input type="checkbox" id="check2"><label for="check2">Mr natty</label></li>
+                    <li><input type="checkbox" id="check3" checked=""><label for="check3">Suavecito</label></li>
+                    <li><input type="checkbox" id="check4"><label for="check4">Malin+Goetz</label></li>
+                    <li><input type="checkbox" id="check5"><label for="check5">Murray's</label></li>
+                    <li><input type="checkbox" id="check6"><label for="check6">American Crew</label></li>
+                </ul>
+                </fieldset>
+                <fieldset>
+                <legend>Группы товаров</legend>
+                <ul>
+                    <li><input type="radio" id="radio1"><label for="radio1">Бритвенные принадлежности</label></li>
+                    <li><input type="radio" id="radio2"><label for="radio2">Средства для ухода</label></li>
+                    <li><input type="radio" id="radio3"><label for="radio3">Аксессуары</label></li>
+                </ul>
+                </fieldset>
+                <!-- ниже - это отправка формы по спецификации -->
+                <input type="submit" name="Показать"> 
+        </form>
+
+        <div class="goods-container">
+        	<section class="item1">
         				<a href=""><img src="" width=""></a>
-        			</div>
-        			<div class="item-name">
-        				<a href="">Набор для путешествий</a>
-        			</div>
-        			<div class="item-price">2900</div>
-        			<div class="item-buy">
-        				<a href="">КУПИТЬ</a>
-        			</div>
-        		</div>
-        	</div>
+        				 <!-- в вебинаре говорят, это ссылка и заголовок h2 -->
+                         <a href=""><h2><span class="category">Набор для путешествий</span><span class="item-name">"Baxter of California"</span></h2></a> 
+                       
+                        <span class="">2900</span>
+        				<a href="">Купить</a>
+        	</section>
+            <section class="item2">
+                        <a href=""><img src="" width=""></a>
+                         <a href=""><h2><span class="category">Увлажняющий кондиционер</span><span class="item-name">"Baxter of California"</span></h2></a> 
+                        <span class="">750</span>
+                        <a href="">Купить</a>
+            </section>
+            <section class="item3">
+                        <a href=""><img src="" width=""></a>
+                         <a href=""><h2><span class="category">Гель для волос</span><span class="item-name">"Suavectio"</span></h2></a> 
+                        <span class="">290</span>
+                        <a href="">Купить</a>
+            </section>
+            <section class="item4">
+                        <a href=""><img src="" width=""></a>
+                         <a href=""><h2><span class="category">Гель для укладки волос</span><span class="item-name">"American Crew"</span></h2></a> 
+                        <span class="">500</span>
+                        <a href="">Купить</a>
+            </section>
+            <section class="item5">
+                        <a href=""><img src="" width=""></a>
+                         <a href=""><h2><span class="category">Гель для волос</span><span class="item-name">"American Crew"</span></h2></a> 
+                        <span class="">300</span>
+                        <a href="">Купить</a>
+            </section>
+            <section class="item6">
+                        <a href=""><img src="" width=""></a>
+                         <a href=""><h2><span class="category">Набор для бриться</span><span class="item-name">"Baxter of California"</span></h2></a> 
+                        <span class="">3900</span>
+                        <a href="">Купить</a>
+            </section>
         </div>
-        <div class="pages">
+
+        <div class="pagination">
         	<ul class="pages">
         		<li><a href="">1</a></li>
-        		<li><a href="">2</a></li>
+        		<li><a href="" class="active">2</a></li>
         		<li><a href="">3</a></li>
         		<li><a href="">4</a></li>
         	</ul>
         </div>
     </div>
+    </main>
     <footer>
     	<div class="footer-container">
     		<div class="footer-contact-info">
     		    <p>Барбершоп "Бородинский"<br>
-     		    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ.Б.КОНЮШЕННАЯ, Д.19/8<p>
-     		    <a href="" class="address-map">КАК НАС НАЙТИ</a><br>
-     		    <p>ТЕЛЕФОН:+7(495)666-02-66</p>
+     		    Адрес: г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8<p>
+     		    <a href="" class="address-map">Как нас найти</a><br>
+     		    <p>Телефон:+7(495)666-02-66</p>
     		</div>
     		<div class="footer-social">
-    			<span>ДАВАЙТЕ ДРУЖИТЬ!</span>
+    			<span>Давайте дружить!</span>
     			<ul class="footer-social-list">
     				<li><a href=""><img src="" class="vk-logo"></a></li>
     				<li><a href=""><img src="" class="f-logo"></a></li>
@@ -97,7 +132,7 @@
     			</ul>
     		</div>
     		<div class="footer-developer">
-    			<span>РАЗРАБОТАНО:</span>
+    			<span>Разработано:</span>
     			<div class="footer-developer-logo">
     				<a href=""><img src="" class="developer-logo"></a>
     			</div>
